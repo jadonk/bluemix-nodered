@@ -1,0 +1,11 @@
+applications:
+- services:
+  - BoneTest2:cloudantNoSQLDB
+  disk_quota: 1024M
+  host: BoneTest2
+  name: BoneTest2
+  command: node node_modules/node-red/red.js --settings ./bluemix-settings.js -v
+  path: .
+  domain: mybluemix.net
+  instances: 1
+  memory: 512M
